@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  SwiftCoin
-//
-//  Created by Karan Kadyan on 18/08/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
