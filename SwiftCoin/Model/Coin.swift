@@ -4,7 +4,8 @@ struct Coin: Codable, Identifiable {
     let id, symbol, name: String
     let image: String
     let currentPrice: Double
-    let marketCap, marketCapRank, fullyDilutedValuation: Double?
+    let marketCapRank: Int
+    let marketCap, fullyDilutedValuation: Double?
     let totalVolume, high24H, low24H: Double?
     let priceChange24H, priceChangePercentage24H: Double
     let marketCapChange24H, marketCapChangePercentage24H: Double?
@@ -44,35 +45,6 @@ struct Coin: Codable, Identifiable {
         case priceChangePercentage24HInCurrency = "price_change_percentage_24h_in_currency"
     }
 }
-
-// MARK: - SparklineIn7D
 struct SparklineIn7D: Codable {
     let price: [Double]
-}
-
-// MARK: - Encode/decode helpers
-
-class JSONNull: Codable, Hashable {
-
-    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
-            return true
-    }
-
-    public var hashValue: Int {
-            return 0
-    }
-
-    public init() {}
-
-    public required init(from decoder: Decoder) throws {
-            let container = try decoder.singleValueContainer()
-            if !container.decodeNil() {
-                    throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
-            }
-    }
-
-    public func encode(to encoder: Encoder) throws {
-            var container = encoder.singleValueContainer()
-            try container.encodeNil()
-    }
 }
