@@ -1,4 +1,4 @@
-# SwiftCoin App
+<img width="432" alt="Screenshot 2024-08-20 at 12 35 54 PM" src="https://github.com/user-attachments/assets/875b1fa6-e20d-435e-b421-7cd633fcee76"># SwiftCoin App
 
 Swiftcoin is a SwiftUI-based iOS application that provides real-time cryptocurrency prices, with 24-hour updates. The app is designed for users who want to stay informed about the latest market trends and track their favorite cryptocurrencies effortlessly.
 
@@ -10,6 +10,8 @@ Swiftcoin is a SwiftUI-based iOS application that provides real-time cryptocurre
 
 ## Screenshots
 <img width="432" alt="Screenshot 2024-08-20 at 12 34 29 PM" src="https://github.com/user-attachments/assets/06c50f5b-ffa1-4ea7-ab5d-447e1778bdc1">
+<img width="432" alt="Screenshot 2024-08-20 at 12 36 06 PM" src="https://github.com/user-attachments/assets/1fe0c9f9-3678-47a1-9ee1-c78741cf8830">
+
 
 ## Installation
 
